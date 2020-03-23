@@ -1,29 +1,41 @@
 # vue-drag
 
-## Project setup
+Drag and drop to change the position of the DOM.
+
+## Installation
+
+### With npm or yarn
+
 ```
-npm install
+yarn add vue-drag
+
+npm insatll vue-drag
 ```
 
-### Compiles and hot-reloads for development
-```
-npm run serve
+## Usage
+
+### Basic
+
+```html
+<template>
+  <VueDrag>
+    Drag me.
+  </VueDrag>
+</template>
+
+<script>
+import VueDrag from 'vue-drag'
+
+export default {
+  components: { VueDrag }
+}
+</script>
 ```
 
-### Compiles and minifies for production
-```
-npm run build
-```
+### Props
 
-### Run your tests
-```
-npm run test
-```
+### Events
 
-### Lints and fixes files
-```
-npm run lint
-```
+## Licence
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+LICENCE MIT - Created by remu1519.
