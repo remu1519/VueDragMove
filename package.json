@@ -2,9 +2,26 @@
   "name": "vue-drag",
   "version": "0.1.0",
   "private": true,
+  "main": "dist/vue-drag.common.js",
+  "unpkg": "./dist/vue-drag.umd.min.js",
+  "jsdelivr": "./dist/vue-drag.umd.min.js",
+  "typings": "dist/types/index.d.ts",
+  "license": "MIT",
+  "author": "remu1519",
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "Vue",
+    "Vue.js",
+    "drag",
+    "and",
+    "drop",
+    "position"
+  ],
   "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
+    "serve": "vue-cli-service serve ./example/main.js",
+    "build": "vue-cli-service build --target lib --name vue-drag ./src/vuedrag.js",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
@@ -16,6 +33,7 @@
     "@vue/cli-plugin-eslint": "^4.2.0",
     "@vue/cli-service": "^4.2.0",
     "babel-eslint": "^10.0.3",
+    "bootstrap": "^4.4.1",
     "eslint": "^6.7.2",
     "eslint-plugin-vue": "^6.1.2",
     "vue-template-compiler": "^2.6.11"
