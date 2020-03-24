@@ -3,19 +3,19 @@
     <h1> Vue Drag </h1>
     <button @click="addItem" class="btn btn-primary">add item</button>
     <div class="position-relative text-nowrap">
-      <VueDrag v-for="item in itemList" v-bind:key="item.id">
+      <VueDragMove v-for="item in itemList" v-bind:key="item.id">
         <div class="card">
           <div class="card-body">
             Drag me.
           </div>
         </div>
-      </VueDrag>
+      </VueDragMove>
     </div>
   </div>
 </template>
 
 <script>
-import VueDrag from './../src/components/VueDrag';
+import VueDragMove from './../src/components/VueDragMove';
 
 const Item = class {
   constructor() {
@@ -29,7 +29,7 @@ const Item = class {
 
 export default {
   name       : 'App',
-  components : {VueDrag},
+  components : {VueDragMove},
   data() {
     return {
       itemList : []

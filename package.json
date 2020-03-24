@@ -1,5 +1,5 @@
 {
-  "name": "vue-drag",
+  "name": "vue-drag-move",
   "version": "0.1.0",
   "private": false,
   "main": "dist/vue-drag.common.js",
@@ -22,7 +22,7 @@
   "scripts": {
     "serve": "vue-cli-service serve ./example/main.js --open --mode local",
     "build:doc": "vue-cli-service build ./example/main.js --dest docs --mode development",
-    "build": "vue-cli-service build --target lib --name vue-drag ./src/vuedrag.js",
+    "build": "vue-cli-service build --target lib --name vue-drag ./src/main.js",
     "lint": "vue-cli-service lint src --no-fix",
     "lint:doc": "vue-cli-service lint example --no-fix",
     "fix": "vue-cli-service lint src",

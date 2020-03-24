@@ -1,11 +1,11 @@
-import VueDrag from './components/VueDrag';
+import VueDragMove from './components/VueDragMove';
 
 export const install = Vue => {
   if (install.installed) {
     return;
   }
   install.installed = true;
-  Vue.component('vue-drag', VueDrag);
+  Vue.component('vue-drag-move', VueDragMove);
 };
 
 const plugin = {
@@ -26,4 +26,4 @@ if (GlobalVue) {
   GlobalVue.use(plugin);
 }
 
-export default VueDrag;
+export default VueDragMove;
