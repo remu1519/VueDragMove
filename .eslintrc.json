@@ -233,7 +233,7 @@
         "quote-props"                      : ["error", "as-needed"],
         "quotes"                           : ["error", "single", {"avoidEscape": true}],
         "require-jsdoc"                    : ["warn"],
-        "semi"                             : ["error", "never"],
+        "semi"                             : ["error", "always"],
         "semi-spacing"                     : ["error", {"before": false, "after": false}],
         "semi-style"                       : "error",
         "sort-keys"                        : ["off"],
