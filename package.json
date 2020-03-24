@@ -1,6 +1,6 @@
 {
   "name": "vue-drag-move",
-  "version": "0.1.2",
+  "version": "1.0.0",
   "private": false,
   "main": "dist/vue-drag.common.js",
   "unpkg": "./dist/vue-drag.umd.min.js",
