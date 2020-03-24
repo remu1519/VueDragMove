@@ -8,64 +8,8 @@
 </template>
 
 <script>
-const userSelectNone = new class {
-  constructor() {
-    this.defaultUserSelect = 'auto';
-    this.defaultMozUserSelect = 'auto';
-    this.defaultMsUserSelect = 'auto';
-    this.defaultWebkitUserSelect = 'auto';
-  }
-
-  enable() {
-    this.defaultUserSelect = document.body.style.userSelect;
-    this.defaultMozUserSelect = document.body.style.mozUserSelect;
-    this.defaultMsUserSelect = document.body.style.msUserSelect;
-    this.defaultWebkitUserSelect = document.body.style.webkitUserSelect;
-    document.body.style.userSelect = 'none';
-    document.body.style.mozUserSelect = 'none';
-    document.body.style.msUserSelect = 'none';
-    document.body.style.webkitUserSelect = 'none';
-  }
-
-  disable() {
-    document.body.style.userSelect = this.defaultUserSelect;
-    document.body.style.mozUserSelect = this.defaultMozUserSelect;
-    document.body.style.msUserSelect = this.defaultMsUserSelect;
-    document.body.style.webkitUserSelect = this.defaultWebkitUserSelect;
-  }
-}();
-
-const Position = class {
-  constructor() {
-    this._prevY = 0;
-    this._prevX = 0;
-    this._isDragging = false;
-  }
-
-  set prevY(val) {
-    this._prevY = parseInt(val, 10);
-  }
-
-  set prevX(val) {
-    this._prevX = parseInt(val, 10);
-  }
-
-  set isDragging(val) {
-    this._isDragging = !!val;
-  }
-
-  get prevY() {
-    return this._prevY;
-  }
-
-  get prevX() {
-    return this._prevX;
-  }
-
-  get isDragging() {
-    return this._isDragging;
-  }
-};
+import Position from './../classes/position';
+import userSelectNone from './../classes/user-select-none';
 
 export default {
   data() {
@@ -99,6 +43,7 @@ export default {
       this.position.prevX = e.clientX;
     },
     handleStopDrag(e) {
+      userSelectNone.disable();
       this.position.isDragging = false;
       this.$emit('stop', e);
     },
@@ -108,7 +53,6 @@ export default {
       }
 
       this.$emit('dragging', e);
-      userSelectNone.disable();
 
       const diffY = e.clientY - this.position.prevY;
       const diffX = e.clientX - this.position.prevX;

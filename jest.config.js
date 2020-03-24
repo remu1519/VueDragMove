@@ -20,12 +20,16 @@ module.exports = {
     "**/tests/unit/**/*.spec.(js|jsx|ts|tsx)|**/__tests__/*.(js|jsx|ts|tsx)"
   ],
   testURL: "http://localhost/",
-  collectCoverageFrom: [
-    "<rootDir>/src/vuedraggable.js",
-    "<rootDir>/src/util/helper.js"
-  ],
   // testEnvironment: "node",
   transformIgnorePatterns: [
     "node_modules/(?!(babel-jest|jest-vue-preprocessor)/)"
   ],
+  coverageThreshold: {
+    global: {
+      //branches: 80,
+      functions: 75,
+      lines: 80,
+      statements: 80 
+    }
+  },
 };
