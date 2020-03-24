@@ -18,32 +18,32 @@
 import VueDrag from './../src/components/VueDrag';
 
 const Item = class {
-  constructor () {
+  constructor() {
     this._id = Symbol('item id');
   }
 
-  get id () {
+  get id() {
     return this._id;
   }
 };
 
 export default {
-  name: 'App',
-  components: { VueDrag },
-  data () {
+  name       : 'App',
+  components : {VueDrag},
+  data() {
     return {
-      itemList: []
-    }
+      itemList : []
+    };
   },
-  created () {
-      this.addItem();
+  created() {
+    this.addItem();
   },
-  methods: {
-    addItem () {
+  methods : {
+    addItem() {
       this.itemList.push(new Item());
     }
   }
-}
+};
 </script>
 
 <style>
