@@ -1,6 +1,6 @@
 <template>
   <div class="container text-center">
-    <h1> Vue Drag </h1>
+    <h1> Vue Drag Move </h1>
     <button @click="addItem" class="btn btn-primary">add item</button>
     <div class="position-relative text-nowrap">
       <VueDragMove v-for="item in itemList" v-bind:key="item.id">
