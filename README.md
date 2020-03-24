@@ -2,6 +2,8 @@
 
 Drag and drop to change the position of the DOM.
 
+[![GitHub open issues](https://img.shields.io/github/issues/remu1519/VueDrag.svg)](https://github.com/remu1519/VueDrag/issues?q=is%3Aopen+is%3Aissue)
+
 ## Installation
 
 ### With npm or yarn
