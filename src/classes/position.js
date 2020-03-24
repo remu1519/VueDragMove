@@ -28,4 +28,4 @@ export default class {
   get isDragging() {
     return this._isDragging;
   }
-};
+}

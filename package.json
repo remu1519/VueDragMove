@@ -30,8 +30,7 @@
     "version": "standard-version",
     "test:unit": "vue-cli-service test:unit --coverage",
     "test:coverage": "vue-cli-service test:unit --coverage --verbose && codecov",
-    "prepare": "run-s lint lint:doc test:unit build:doc build",
-    "prepublish": "run-s version"
+    "prepublish": "run-s lint lint:doc test:unit build:doc build"
   },
   "dependencies": {},
   "devDependencies": {
