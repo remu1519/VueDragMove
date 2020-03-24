@@ -1,6 +1,6 @@
 <template>
     <div class="vue-drag-move-wrapper"
-        :style="{ top, left }"
+        :style="{ top, left, position: 'absolute' }"
         @mousedown="handleStartDrag"
         @touchstart="handleStartDrag">
         <slot></slot>
@@ -72,9 +72,3 @@ export default {
   }
 };
 </script>
-
-<style scoped>
-.vue-drag-move-wrapper {
-    position: absolute;
-}
-</style>
