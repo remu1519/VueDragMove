@@ -1,6 +1,6 @@
 {
   "name": "vue-drag-move",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": false,
   "main": "dist/vue-drag.common.js",
   "unpkg": "./dist/vue-drag.umd.min.js",
@@ -30,7 +30,8 @@
     "version": "standard-version",
     "test:unit": "vue-cli-service test:unit --coverage",
     "test:coverage": "vue-cli-service test:unit --coverage --verbose && codecov",
-    "prepublish": "run-s lint lint:doc test:unit build:doc build"
+    "prepare": "run-s lint lint:doc test:unit build:doc build",
+    "prepublish": "run-s version"
   },
   "dependencies": {},
   "devDependencies": {
