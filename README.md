@@ -2,7 +2,9 @@
 
 Drag and drop to change the position of the DOM.
 
-[![GitHub open issues](https://img.shields.io/github/issues/remu1519/VueDrag.svg)](https://github.com/remu1519/VueDrag/issues?q=is%3Aopen+is%3Aissue)
+[![GitHub open issues](https://img.shields.io/github/issues/remu1519/VueDragMove.svg)](https://github.com/remu1519/VueDragMove/issues?q=is%3Aopen+is%3Aissue)
+[![npm version](https://img.shields.io/npm/v/vue-drag-move.svg)](https://www.npmjs.com/package/vue-drag-move)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/remu1519/VueDragMove/blob/master/LICENSE)
 
 ## Demo
 
