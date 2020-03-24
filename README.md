@@ -1,4 +1,4 @@
-# vue-drag
+# vue-drag-move
 
 Drag and drop to change the position of the DOM.
 
@@ -6,7 +6,7 @@ Drag and drop to change the position of the DOM.
 
 ## Demo
 
-https://remu1519.github.io/VueDrag/
+https://remu1519.github.io/VueDragMove/
 
 ## Installation
 
@@ -24,16 +24,16 @@ npm insatll vue-drag
 
 ```html
 <template>
-  <VueDrag>
+  <VueDragMove>
     Drag me.
-  </VueDrag>
+  </VueDragMove>
 </template>
 
 <script>
-import VueDrag from 'vue-drag'
+import VueDragMove from 'vue-drag-move'
 
 export default {
-  components: { VueDrag }
+  components: { VueDragMove }
 }
 </script>
 ```
